@@ -12,9 +12,7 @@ import SignupPage from './pages/SignupPage';
 
 import {Switch, Route, withRouter} from 'react-router-dom';
 
-import {getUser} from './services/userService';
-
-
+import {getUser, logout} from './services/userService';
 
 
 function App(props) {
@@ -29,9 +27,15 @@ function App(props) {
     props.history.push('/dashboard');
   }
 
+  function handleLogout() {
+    logout(); //this removes the token from localstorage
+    setUserState({user: null});
+    props.history.push('/');
+  }
+
   return (
     <div className="App">
-     <Header user={userState.user} />
+     <Header user={userState.user} handleLogout={handleLogout} />
      <Switch>
        <Route exact path='/' render={(props) =>
         <HomePage /> 

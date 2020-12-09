@@ -9,7 +9,7 @@ function Header(props) {
             </Link>
             <nav>
                 <ul className="NavLinks"> 
-                    <li><Link to='/logout'>Log Out</Link></li>
+                    <li><Link to='' onClick={props.handleLogout}>Log Out</Link></li>
                     <li><Link to='/dashboard'>Dashboard</Link></li>
                 </ul>
             </nav>
