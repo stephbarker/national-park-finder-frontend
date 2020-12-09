@@ -1,4 +1,4 @@
-import {signup} from '../services/userService';
+import {signUp} from '../services/userService';
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 
@@ -15,12 +15,21 @@ function SignupPage(props) {
     }
 
     function handleChange(event) {
-
+        setFormState(prevState => ({
+            ...prevState,
+            [event.target.name]: event.target.value
+        }));
     }
 
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
         event.preventDefault();
         if(!formValid()) return;
+        try {
+            await signUp(formState);
+            // calling a helper function defined in app.js to add user to state
+        } catch(error) {
+            alert(error.message);
+        }
     }
 
     return (
