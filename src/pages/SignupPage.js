@@ -26,7 +26,7 @@ function SignupPage(props) {
         if(!formValid()) return;
         try {
             await signUp(formState);
-            // calling a helper function defined in app.js to add user to state
+            props.handleSignupOrLogin();
         } catch(error) {
             alert(error.message);
         }
