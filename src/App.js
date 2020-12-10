@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 import './App.css';
 
@@ -13,11 +13,27 @@ import SignupPage from './pages/SignupPage';
 import {Switch, Route, withRouter, Redirect} from 'react-router-dom';
 
 import {getUser, logout} from './services/userService';
+import {getParks} from './services/nps-api';
 
 
 function App(props) {
   /* component state */
   const [userState, setUserState] = useState({user: getUser()});
+
+  const[parkData, setParkData] = useState({
+    data: []
+  });
+
+  /* API Functions */
+  async function getAppData() {
+    const data = await getParks();
+    console.log(data)
+    setParkData(data);
+  }
+
+  useEffect(() => {
+    getAppData();
+  }, []);
 
   /* helper functions */
   function handleSignupOrLogin() {
@@ -38,7 +54,7 @@ function App(props) {
      <Header user={userState.user} handleLogout={handleLogout} />
      <Switch>
        <Route exact path='/' render={(props) =>
-        <HomePage /> 
+        <HomePage parkData={parkData} /> 
        }/>
       <Route exact path='/dashboard' render={(props) =>
         getUser() ?
