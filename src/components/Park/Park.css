@@ -9,7 +9,12 @@
     font-size: 25px;
     text-transform: capitalize;
     padding: 20px;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 1px 1px 12px 1px grey;
+  }
+
+  .parkcard:hover {
+    box-shadow: 1px 1px 15px 3px grey;
+    cursor: pointer;
   }
   
   .flex-ctr {

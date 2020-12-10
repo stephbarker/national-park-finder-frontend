@@ -1,11 +1,14 @@
 import './Park.css'
+import {Link} from 'react-router-dom';
 
-function Park(props) {
+const Park = ({park}) => {
     return (
         <div>
+        <Link to='/detail'>
         <article className='parkcard flex-ctr'>
-            <h3>{props.park.fullName}</h3>
+            <h3>{park.fullName}</h3>
         </article>
+        </Link>
         </div>
     )
 }

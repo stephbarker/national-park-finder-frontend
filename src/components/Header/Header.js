@@ -5,19 +5,18 @@ function Header(props) {
     let nav = props.user ?
     <header className="Header">
             <Link to='/'>
-            <h1>My Project</h1>
+            <h1><img id="logo" src="./images/npf-logo.png" alt="moutain logo"/></h1>
             </Link>
             <nav>
                 <ul className="NavLinks"> 
                     <li><Link to='' onClick={props.handleLogout}>Log Out</Link></li>
-                    <li><Link to='/dashboard'>Dashboard</Link></li>
                 </ul>
             </nav>
         </header>
         :
         <header className="Header">
             <Link to='/'>
-            <h1>My Project</h1>
+            <h1><img id="logo" src="./images/npf-logo.png" alt="moutain logo"/></h1>
             </Link>
             <nav>
                 <ul className="NavLinks"> 

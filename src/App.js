@@ -5,7 +5,8 @@ import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-import DashboardPage from './pages/DashboardPage';
+
+import DetailPage from './pages/DetailPage';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
@@ -27,7 +28,6 @@ function App(props) {
   /* API Functions */
   async function getAppData() {
     const data = await getParks();
-    console.log(data)
     setParkData(data);
   }
 
@@ -40,7 +40,7 @@ function App(props) {
     // place user into state using setter function
     setUserState({user: getUser()});
     //programmatically route user to dasboard
-    props.history.push('/dashboard');
+    props.history.push('/');
   }
 
   function handleLogout() {
@@ -56,9 +56,9 @@ function App(props) {
        <Route exact path='/' render={(props) =>
         <HomePage parkData={parkData} /> 
        }/>
-      <Route exact path='/dashboard' render={(props) =>
+      <Route exact path='/detail' render={(props) =>
         getUser() ?
-       <DashboardPage />
+       <DetailPage />
        :
        <Redirect to='/login' />
        }/>

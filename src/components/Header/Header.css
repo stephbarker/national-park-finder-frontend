@@ -1,5 +1,5 @@
 .Header {
-    background-color: #282c34;
+    background-color: green;
     padding-left: 10px;
     padding-right: 10px;
     height: 100px;
@@ -20,4 +20,12 @@
 
 .NavLinks li {
     margin-right: 20px;
+    font-size: 25px;
+}
+
+#logo {
+    height: 70px;
+    width: 80px;
+    border-radius: 25%;
+    margin: 20px;
 }
