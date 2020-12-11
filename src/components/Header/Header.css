@@ -2,7 +2,7 @@
     background-color: green;
     padding-left: 10px;
     padding-right: 10px;
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,6 +11,10 @@
 .Header a {
     text-decoration: none;
     color: white;
+}
+
+.Header a:hover{
+    font-size: 110%;
 }
 
 .NavLinks {
@@ -24,8 +28,8 @@
 }
 
 #logo {
-    height: 70px;
-    width: 80px;
+    height: 60px;
+    width: 70px;
     border-radius: 25%;
     margin: 20px;
 }

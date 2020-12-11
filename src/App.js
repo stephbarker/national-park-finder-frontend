@@ -7,9 +7,10 @@ import Footer from './components/Footer/Footer';
 
 
 import DetailPage from './pages/DetailPage';
-import HomePage from './pages/HomePage';
+import ListPage from './pages/ListPage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import HomePage from './pages/HomePage';
 
 import {Switch, Route, withRouter, Redirect} from 'react-router-dom';
 
@@ -53,8 +54,11 @@ function App(props) {
     <div className="App">
      <Header user={userState.user} handleLogout={handleLogout} />
      <Switch>
-       <Route exact path='/' render={(props) =>
-        <HomePage parkData={parkData} /> 
+     <Route exact path='/' render={(props) =>
+       <HomePage />
+       }/>
+       <Route exact path='/list' render={(props) =>
+        <ListPage parkData={parkData} /> 
        }/>
       <Route exact path='/parks/:id' render={(props) =>
         getUser() ?

@@ -3,4 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 50px;
+    background-color: green;
+    color: white;
+    padding-top: 15px;
 }

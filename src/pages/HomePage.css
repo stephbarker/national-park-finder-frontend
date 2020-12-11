@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+
+.home-logo {
+    color: white;
+    font-size: 75px;
+    font-family: 'Space Grotesk';
+}
+
+.home-description {
+    color: white;
+    font-size: 25px;
+    margin-top: -40px;
+    font-family: 'Space Grotesk';
+
+}
+
+.explore-button {
+    margin: 20px;
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    padding: 0px;
+    background-color: lightblue;
+    color: coral;
+    font-family: 'Space Grotesk';
+}
