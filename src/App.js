@@ -56,9 +56,9 @@ function App(props) {
        <Route exact path='/' render={(props) =>
         <HomePage parkData={parkData} /> 
        }/>
-      <Route exact path='/detail' render={(props) =>
+      <Route exact path='/parks/:id' render={(props) =>
         getUser() ?
-       <DetailPage />
+       <DetailPage parkData={parkData.data.find(park => park.id === props.match.params.id)} />
        :
        <Redirect to='/login' />
        }/>
