@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Park = (props) => {
     return (
         <div>
-        <Link to={`/parks/${props.park.id}`}>
+        <Link to={`/parks/${props.park.id}`} style={{textDecoration: 'none'}}>
         <article className='parkcard flex-ctr'>
             <h3>{props.park.fullName}</h3>
         </article>

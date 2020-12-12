@@ -1,0 +1,62 @@
+.detail-title {
+    margin-top: 30px;
+    color: darkblue;
+    text-shadow: 2px 2px coral;
+    font-size: 45px;
+}
+
+.detail-description {
+    color: darkgreen;
+    padding: 20px;
+    margin: -5px 40px 20px 40px;
+    text-align: center;
+    border: 2px solid yellow;
+}
+
+.activities-title {
+    color: coral;
+    text-shadow: 1px 1px green;
+    font-size: 35px;
+    margin: 70px 50px 45px;
+}
+
+.activities-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid yellow;
+    padding: 20px;
+    padding-left: 0.5px;
+    color: darkgreen;
+    margin: -25px 50px;
+    margin-bottom: 50px;
+}
+
+.weather-title {
+    color: coral;
+    text-shadow: 1px 1px green;
+    font-size: 35px;
+    margin: 50px;
+}
+
+.weather-info {
+    border: 2px solid yellow;
+    padding: 20px;
+    padding-left: 0.5px;
+    color: darkgreen;
+    text-align: center;
+    padding: 20px;
+    margin: -25px 50px;
+}
+.activity-weather-ctr {
+    display: flex;
+    flex-direction: column;
+}
+
+.park-website {
+    font-size: 20px;
+}
+
+.park-website:hover {
+    text-decoration: none;
+}

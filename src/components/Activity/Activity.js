@@ -1,6 +1,8 @@
+import './Activity.css';
+
 function Activity(props) {
     return(
-        <div>
+        <div className='activities'>
             <ul>
                 <li>
                 {props.activity.name}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+
+.list-title {
+    font-family: 'Space Grotesk';
+    margin: 30px;
+    font-size: 60px;;
+    color: darkblue;
+    text-shadow: 4px 4px coral;
+}
+
+.line{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid yellow;
+}
