@@ -1,6 +1,6 @@
 # Introduction
 
-This is a web app that allows a user to search for National Parks by State using the NPS API. As a logged in user, you can view each park for a description, list of activities and leave comments about your experience.
+This is a web app that allows a user to view all the Nation Parks in CA using the NPS API. As a logged in user, you can view each park for a description, list of activities, weather info and visit the website of each park.
 
 # Technologies Used
  
