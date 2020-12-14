@@ -22,7 +22,7 @@ This is a web app that allows a user to view all the Nation Parks in CA using th
 
  See project planning via [Trello](https://trello.com/b/VJgcyFQa/national-park-finder).
 
- See the deplyed app [here](https://project-3-frontend.herokuapp.com/)!
+ See the deplyed app [here](https://project-3-frontend.herokuapp.com)!
 
  # Wireframes
  ERD
