@@ -1,0 +1,17 @@
+.signup-title {
+    font-size: 60px;;
+    color: darkblue;
+    text-shadow: 4px 4px coral;
+    margin-top: -70px;
+    margin-bottom: 50px;
+}
+
+.signup-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid yellow;
+    height: 500px;
+    width: 500px;
+}

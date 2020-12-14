@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import { Link } from "react-router-dom";
 import {login} from '../services/userService';
+import './LoginPage.css';
 
 function LoginPage(props) {
     /* component state */
@@ -34,9 +35,8 @@ function LoginPage(props) {
 
     return (
     <main className='Page'>
-        <h1>
-            Login Page
-        </h1>
+        <section className='login-page'>
+        <h1 className='login-title'>Log In</h1>
         <form onSubmit={handleSubmit}>
             <div className="form-group">
                 <div className="col-sm-12">
@@ -56,6 +56,7 @@ function LoginPage(props) {
                 </div>
             </div>
         </form>
+        </section>
     </main>
   )  
 }

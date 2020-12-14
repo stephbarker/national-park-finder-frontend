@@ -8,9 +8,9 @@
     text-shadow: 4px 4px coral;
 }
 
-.line{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid yellow;
+.collection {
+    border: 3px solid yellow;
+    margin: 65px;
+    margin-top: 5px;
+    padding: 65px;
 }

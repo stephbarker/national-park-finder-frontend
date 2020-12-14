@@ -24,6 +24,32 @@ This is a web app that allows a user to search for National Parks by State using
 
  See the deplyed app [here](#)!
 
+ # Wireframes
+ ERD
+ ![ERD](./public/images/ca-erd.png)
+ Home Page
+ ![HomePage](./public/images/ca-homepage.png)
+ List Page
+ ![ListPage](./public/images/ca-resultspage.png)
+ Sign Up Page
+ ![SignupPage](./public/images/ca-signuppage.png)
+ Log In Page
+ ![LoginPage](./public/images/ca-loginpage.png)
+ Detail Page
+ ![DetailPage](./public/images/ca-detailpage.png)
+
+ # Screenshots
+ Home Page
+ ![HomePage](./public/images/ca-ss-home.png)
+ List Page
+ ![ListPage](./public/images/ca-ss-list.png)
+ Sign Up Page
+ ![SignupPage](./public/images/ca-ss-signup.png)
+ Log In Page
+ ![LoginPage](./public/images/ca-ss-login.png)
+ Detail Page
+ ![DetailPage](./public/images/ca-ss-detail.png)
+
  # Future Enhancements
 
  Allow users to save each park they visited in a list. Also, allow them to create a list of parks the want to vist next.

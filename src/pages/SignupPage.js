@@ -1,6 +1,7 @@
 import {signUp} from '../services/userService';
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
+import './SignupPage.css'
 
 function SignupPage(props) {
 
@@ -34,9 +35,8 @@ function SignupPage(props) {
 
     return (
     <main className='Page'>
-        <h1>
-            Signup Page
-        </h1>
+      <section className='signup-page'>
+        <h1 className='signup-title'>Sign Up !</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <div className="col-sm-12">
@@ -55,12 +55,13 @@ function SignupPage(props) {
           </div>
           <div className="form-group">
             <div className="col-sm-12 text-center">
-              <input disabled={!formValid()} type="submit" className="btn btn-default" value="Sign Up" />
+              <input disabled={!formValid()} type="submit" className="btn btn-default signup-btn" value="Sign Up" />
               &nbsp;&nbsp;
               <Link to='/'>Cancel</Link>
             </div>
           </div>
         </form>
+        </section>
     </main>
   )  
 }

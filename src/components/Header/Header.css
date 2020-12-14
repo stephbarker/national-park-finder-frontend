@@ -33,3 +33,8 @@
     border-radius: 25%;
     margin: 20px;
 }
+
+#logo:hover {
+    height: 65px;
+    width: 75px;
+}
